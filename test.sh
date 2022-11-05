@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 GRPCSERVER=localhost:5254
-PROTODIR=./Protos
+PROTODIR=./Task3/Protos
 
 echo "List users. Empty balances."
 grpcurl -import-path $PROTODIR -proto billing.proto -plaintext -d \
